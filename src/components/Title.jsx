@@ -17,23 +17,25 @@ export default function Title() {
   }, [images.length]);
 
   return (
-    <div className="flex h-screen items-center justify-center gap-8">
-      <div className="relative size-48">
+    <div className="relative z-10 flex h-screen flex-col items-center justify-center gap-8 md:flex-row">
+      <div className="relative size-44 md:size-48">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className={`absolute rounded-full shadow-xl transition-opacity duration-1000 ease-in-out ${
+            className={`absolute aspect-square rounded-full shadow-xl transition-opacity duration-1000 ease-in-out ${
               index === currentImageIndex ? "opacity-100" : "opacity-0"
             }`}
           />
         ))}
       </div>
 
-      <div className="z-10 flex flex-col gap-3">
-        <h1 className="font-fira text-4xl font-bold">Burhanu Sultan Ramadan</h1>
-        <div className="font-fira text-xl">
+      <div className="flex flex-col gap-3">
+        <h1 className="font-fira text-2xl font-bold md:text-4xl">
+          Burhanu Sultan Ramadan
+        </h1>
+        <div className="font-fira text-base md:text-xl">
           <p>{"> "}Full Stack Developer</p>
           <p className="mt-1">{"> "}I love learning new thing</p>
         </div>

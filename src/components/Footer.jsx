@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <div className="relative z-10 flex h-36 w-full items-center justify-between bg-slate-800 px-20 text-white">
+    <div className="relative z-10 flex h-36 w-full flex-col-reverse items-center justify-evenly bg-slate-800 px-8 text-sm text-white md:flex-row md:justify-between md:px-20 md:text-base">
       <div>
-        <h3 className="text-base">Burhanu Sultan Ramadan &copy; 2024</h3>
+        <h3>Burhanu Sultan Ramadan &copy; 2024</h3>
       </div>
-      <div className="flex items-center justify-between gap-10">
-        <div className="flex items-center justify-between gap-10">
+      <div className="flex items-center justify-between gap-4 md:gap-10">
+        <div className="flex items-center justify-between gap-4 md:gap-10">
           <a className="hover:opacity-70" href="#about">
             About
           </a>
@@ -20,7 +20,7 @@ export default function Footer() {
             target="_blank"
           >
             <svg
-              className="size-8 fill-current text-[#e6e6e6]"
+              className="size-6 fill-current text-[#e6e6e6] md:size-8"
               viewBox="0 0 26 26"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -33,7 +33,7 @@ export default function Footer() {
             target="_blank"
           >
             <svg
-              className="size-8 fill-current text-[#e6e6e6]"
+              className="size-6 fill-current text-[#e6e6e6] md:size-8"
               aria-label="github"
               viewBox="0 0 14 14"
             >

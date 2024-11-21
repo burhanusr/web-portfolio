@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
     <div>
-      <div className="font-fira z-10 rounded-xl border border-slate-100/40 bg-white/40 p-6 shadow-xl backdrop-blur-sm">
+      <div className="font-fira rounded-xl border border-slate-100/40 bg-white/40 p-6 shadow-xl backdrop-blur-sm">
         <span className="text-xs">burhanusr / SKILLS.md</span>
         <h2 className="py-2 text-2xl font-semibold md:text-3xl">
           Language & Tools

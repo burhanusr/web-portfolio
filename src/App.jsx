@@ -37,7 +37,7 @@ function App() {
         <Title />
         <div
           id="about"
-          className="mb-8 flex h-screen w-full items-center justify-center"
+          className="relative z-10 flex w-full items-center justify-center py-6"
         >
           <div className="flex w-[80%] flex-col gap-4 xl:w-[40rem]">
             <About />
@@ -45,37 +45,32 @@ function App() {
           </div>
         </div>
 
-        <div id="projects" className="relative z-10 m-auto w-[80%] py-16">
-          <div className="rounded-xl border border-slate-100/40 bg-white/40 p-6 shadow-xl backdrop-blur-sm">
-            <span className="font-fira text-xs">burhanusr / PROJECTS.md</span>
-            <h2 className="font-fira py-2 text-2xl font-semibold md:text-3xl">
-              Projects
-            </h2>
-            <div className="flex flex-col items-center gap-16 border-t border-slate-800 py-8">
-              <Project
-                name="Natours"
-                desc="Online Tour Web Booking App"
-                demo="https://natours-three-rho.vercel.app"
-                github="https://github.com/burhanusr/natours"
-                photo1={image.natours2}
-                photo2={image.natours1}
-              />
-              <Project
-                name="e-Gilang"
-                desc="Administration Service Website"
-                demo="https://egilang.gilangharjo.id"
-                photo1={image.egilang2}
-                photo2={image.egilang1}
-              />
-              <Project
-                name="Stufast Learning Center"
-                desc="Online Learning And Teaching Marketplace"
-                demo="https://stufast.id/"
-                photo1={image.stufast2}
-                photo2={image.stufast1}
-              />
-            </div>
-          </div>
+        <div
+          id="projects"
+          className="relative z-10 m-auto flex w-[80%] flex-col items-center gap-16 py-16"
+        >
+          <Project
+            name="Natours"
+            desc="Online Tour Web Booking App"
+            demo="https://natours-three-rho.vercel.app"
+            github="https://github.com/burhanusr/natours"
+            photo1={image.natours2}
+            photo2={image.natours1}
+          />
+          <Project
+            name="e-Gilang"
+            desc="Administration Service Website"
+            demo="https://egilang.gilangharjo.id"
+            photo1={image.egilang2}
+            photo2={image.egilang1}
+          />
+          <Project
+            name="Stufast Learning Center"
+            desc="Online Learning And Teaching Marketplace"
+            demo="https://stufast.id/"
+            photo1={image.stufast2}
+            photo2={image.stufast1}
+          />
         </div>
       </div>
       <Footer />

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="z-10 rounded-xl border border-slate-100/40 bg-white/40 p-6 shadow-xl backdrop-blur-sm">
+    <div className="rounded-xl border border-slate-100/40 bg-white/40 p-6 shadow-xl backdrop-blur-sm">
       <span className="font-fira text-xs">burhanusr / ABOUTME.md</span>
       <h2 className="font-fira py-2 text-2xl font-semibold md:text-3xl">
         About Me
