@@ -1,54 +1,16 @@
-// import { useState } from 'react';
-import profile1 from './assets/img/profile-1.jpg';
-// import profile2 from './assets/img/profile-2.png';
-// import linkedin from './assets/svg/linkedin.svg';
-// import github from './assets/svg/github.svg';
-import './App.css';
+import About from "./components/About";
+import Project from "./components/Project";
+import Skills from "./components/Skills";
+import Title from "./components/Title";
+
+import image from "./assets/img";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <div className="hero">
-        <div className="hero-image">
-          <img className="profile" src={profile1} alt="" />
-          {/* <img className="profile" src={profile2} alt="" /> */}
-        </div>
-        <div className="hero-text">
-          <h1>Burhanu Sultan Ramadan</h1>
-          <p>{'> '}Full Stack Developer</p>
-          <p>{'> '}I love learning new thing</p>
-          <div className="hero-btn">
-            <a className="contact-me" href="#">
-              Contact Me
-            </a>
-            <a
-              className="icon linkedin"
-              href="https://www.linkedin.com/in/burhanusr/"
-            ></a>
-            <a className="icon github" href="https://github.com/burhanusr"></a>
-          </div>
-        </div>
-      </div>
-      <div className="gradient-bg">
-        <svg xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <filter id="goo">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="10"
-                result="blur"
-              />
-              <feColorMatrix
-                in="blur"
-                mode="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                result="goo"
-              />
-              <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
-        <svg>
+      <div className="bg-[#E6E6E6]">
+        <svg className="absolute z-0">
           <filter id="noiseFilter">
             <feTurbulence
               type="fractalNoise"
@@ -64,11 +26,59 @@ function App() {
             <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
           </filter>
         </svg>
-        <div className="gradient-container">
-          <div className="g1"></div>
-          <div className="g2"></div>
+
+        <div className="fixed z-0 h-screen w-full overflow-hidden [filter:url('#noiseFilter')]">
+          <div className="absolute left-1/2 h-full w-[60rem] -translate-x-1/2">
+            <div className="animate-blob1 absolute -top-20 left-0 size-[70%] rounded-full bg-[#7AFF83] mix-blend-multiply blur-3xl filter"></div>
+            <div className="animate-blob2 absolute -bottom-20 right-0 size-[70%] rounded-full bg-[#34C5EA] mix-blend-multiply blur-3xl filter"></div>
+          </div>
+        </div>
+
+        <Title />
+        <div
+          id="about"
+          className="mb-8 flex h-screen w-full items-center justify-center"
+        >
+          <div className="flex w-[80%] flex-col gap-4 xl:w-[40rem]">
+            <About />
+            <Skills />
+          </div>
+        </div>
+
+        <div id="projects" className="relative z-10 m-auto w-[80%] py-16">
+          <div className="rounded-xl border border-slate-100/40 bg-white/40 p-6 shadow-xl backdrop-blur-sm">
+            <span className="font-fira text-xs">burhanusr / PROJECTS.md</span>
+            <h2 className="font-fira py-2 text-2xl font-semibold md:text-3xl">
+              Projects
+            </h2>
+            <div className="flex flex-col items-center gap-16 border-t border-slate-800 py-8">
+              <Project
+                name="Natours"
+                desc="Online Tour Web Booking App"
+                demo="https://natours-three-rho.vercel.app"
+                github="https://github.com/burhanusr/natours"
+                photo1={image.natours2}
+                photo2={image.natours1}
+              />
+              <Project
+                name="e-Gilang"
+                desc="Administration Service Website"
+                demo="https://egilang.gilangharjo.id"
+                photo1={image.egilang2}
+                photo2={image.egilang1}
+              />
+              <Project
+                name="Stufast Learning Center"
+                desc="Online Learning And Teaching Marketplace"
+                demo="https://stufast.id/"
+                photo1={image.stufast2}
+                photo2={image.stufast1}
+              />
+            </div>
+          </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
