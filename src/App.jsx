@@ -29,8 +29,8 @@ function App() {
 
         <div className="fixed z-0 h-screen w-full overflow-hidden [filter:url('#noiseFilter')]">
           <div className="absolute left-1/2 h-full w-[60rem] -translate-x-1/2">
-            <div className="animate-blob1 absolute -top-20 left-0 size-[70%] rounded-full bg-[#7AFF83] mix-blend-multiply blur-3xl filter"></div>
-            <div className="animate-blob2 absolute -bottom-20 right-0 size-[70%] rounded-full bg-[#34C5EA] mix-blend-multiply blur-3xl filter"></div>
+            <div className="absolute -top-20 left-0 size-[70%] animate-blob1 rounded-full bg-[#7AFF83] mix-blend-multiply blur-3xl filter"></div>
+            <div className="absolute -bottom-20 right-0 size-[70%] animate-blob2 rounded-full bg-[#34C5EA] mix-blend-multiply blur-3xl filter"></div>
           </div>
         </div>
 
@@ -49,6 +49,14 @@ function App() {
           id="projects"
           className="relative z-10 m-auto flex w-[80%] flex-col items-center gap-16 py-16"
         >
+          <Project
+            name="POS System"
+            desc="Online Web Based POS System"
+            demo="https://mern-pos-system-frontend.vercel.app/"
+            github="https://github.com/burhanusr/mern-pos-system"
+            photo1={image.pos2}
+            photo2={image.pos1}
+          />
           <Project
             name="Natours"
             desc="Online Tour Web Booking App"
