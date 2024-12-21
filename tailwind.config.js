@@ -7,42 +7,30 @@ export default {
         fira: ["Fira Code", "monospace"],
       },
       animation: {
-        blob1: "blob1 15s ease-in-out infinite",
-        blob2: "blob2 15s ease-in-out infinite",
+        blob: "blob 5s infinite",
+        moveline: "moveline 6s linear forwards",
       },
       keyframes: {
-        blob1: {
+        blob: {
           "0%": {
-            transform: "translate(0, 0) rotate(0deg) scale(1)",
+            transform: "translate(-50%, -50%) rotate(0deg) scale(1)",
           },
           "33%": {
-            transform: "scale(1.2)",
-          },
-          "50%": {
-            transform: "translate(50%, 0)",
+            transform: "translate(-50%, -50%) scale(1, 1.2)",
           },
           "66%": {
-            transform: "scale(0.8)",
+            transform: "translate(-50%, -50%) scale(1, 0.8)",
           },
           "100%": {
-            transform: "translate(0, 0) rotate(360deg) scale(1)",
+            transform: "translate(-50%, -50%) rotate(360deg) scale(1)",
           },
         },
-        blob2: {
+        moveline: {
           "0%": {
-            transform: "translate(0, 0) rotate(0deg) scale(1)",
-          },
-          "33%": {
-            transform: "scale(1.1)",
-          },
-          "50%": {
-            transform: "translate(-50%, 0)",
-          },
-          "66%": {
-            transform: "scale(0.9)",
+            height: 0,
           },
           "100%": {
-            transform: "translate(0, 0) rotate(360deg) scale(1)",
+            height: "100%",
           },
         },
       },
