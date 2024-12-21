@@ -11,7 +11,7 @@ export default function Home() {
             <TextReveal>Hello I&apos;m</TextReveal>
           </span>
 
-          <h2 className="mt-1 text-4xl font-bold lg:text-7xl">
+          <h2 className="mt-1 text-2xl font-bold lg:text-7xl">
             <TextReveal delay={0.5}>Burhanu Sultan Ramadan</TextReveal>
           </h2>
         </div>
