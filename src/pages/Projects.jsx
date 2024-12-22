@@ -6,7 +6,7 @@ import TextReveal from "../components/TextReveal";
 const projectList = [
   {
     title: "POS System",
-    desc: "Simple Web-Based POS System for Easy Sales, Inventory Management.",
+    desc: "Simple Web-Based POS System for Easy Sales and Inventory Management.",
     img: image.pos,
     demoURL: "https://mern-pos-system-frontend.vercel.app/",
     github: "https://github.com/burhanusr/mern-pos-system",

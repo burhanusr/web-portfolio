@@ -7,7 +7,7 @@ export default function Home() {
     <main className="relative -top-20 z-30 mx-6 h-screen lg:mx-40">
       <div className="flex h-full w-full flex-col items-center justify-center text-center text-white">
         <div>
-          <span className="lg:text-xl">
+          <span className="text-sm lg:text-xl">
             <TextReveal>Hello I&apos;m</TextReveal>
           </span>
 
@@ -18,7 +18,7 @@ export default function Home() {
 
         <Reveal>
           <div className="mt-4">
-            <p className="text-lg font-medium lg:text-xl">
+            <p className="text-sm font-medium lg:text-xl">
               a <span className="text-blue-500">Fullstack Developer</span> who
               loves <span className="text-yellow-500">building web</span> and{" "}
               <span className="text-purple-500">learning every day</span>
