@@ -9,6 +9,7 @@ export default function TextReveal({ children, delay }) {
       variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       transition={{ staggerChildren: 0.05, delayChildren: delay }}
     >
       <div className="flex items-center justify-center">

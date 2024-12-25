@@ -4,7 +4,7 @@ import TextReveal from "../components/TextReveal";
 
 export default function Home() {
   return (
-    <main className="relative -top-20 z-30 mx-6 h-screen lg:mx-40">
+    <section id="home" className="flex min-h-screen items-center">
       <div className="flex h-full w-full flex-col items-center justify-center text-center text-white">
         <div>
           <span className="text-sm lg:text-xl">
@@ -30,6 +30,6 @@ export default function Home() {
           <Social delay={1.5} />
         </div>
       </div>
-    </main>
+    </section>
   );
 }

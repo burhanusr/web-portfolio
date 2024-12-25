@@ -14,6 +14,7 @@ export default function Social({ delay }) {
       }}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       className="flex gap-4"
     >
       <motion.div

@@ -7,7 +7,7 @@ import TextReveal from "../components/TextReveal";
 
 export default function About() {
   return (
-    <main className="relative z-30 mx-6 mb-20 lg:mx-40">
+    <section id="about" className="relative pt-20">
       <div className="flex flex-col items-center justify-center gap-8 text-white">
         <div className="mt-16 flex flex-col items-center gap-4 text-center">
           <Reveal>
@@ -73,6 +73,6 @@ export default function About() {
           <Experience />
         </div>
       </div>
-    </main>
+    </section>
   );
 }

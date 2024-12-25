@@ -9,6 +9,7 @@ export default function Reveal({ children }) {
       }}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
     >
       {children}

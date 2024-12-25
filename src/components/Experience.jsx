@@ -53,6 +53,7 @@ export default function Experience() {
             <motion.div
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
               className={`h-fit w-full rounded-xl border border-${exp.border}/50 bg-[#1d1d1f]/30 p-5 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md`}
             >

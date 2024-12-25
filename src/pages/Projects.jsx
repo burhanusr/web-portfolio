@@ -34,10 +34,10 @@ const projectList = [
 
 export default function Projects() {
   return (
-    <main className="relative z-30 mx-6 mb-20 text-white lg:mx-40">
-      <div className="flex items-center justify-center">
+    <section id="projects" className="relative pt-20">
+      <div className="mt-16 flex items-center justify-center">
         <div className="relative w-fit">
-          <h2 className="mt-8 text-4xl font-bold lg:mt-40 lg:text-7xl">
+          <h2 className="text-4xl font-bold lg:text-7xl">
             <TextReveal>Portfolio</TextReveal>
           </h2>
         </div>
@@ -50,6 +50,7 @@ export default function Projects() {
               key={i}
               initial={{ opacity: 0, x: i % 2 === 0 ? -100 : 100 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeInOut" }}
             >
               <CardProject
@@ -63,6 +64,6 @@ export default function Projects() {
           ))}
         </ul>
       </div>
-    </main>
+    </section>
   );
 }

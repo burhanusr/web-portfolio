@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import {
   AnimatePresence,
   motion,
@@ -60,20 +59,20 @@ export default function Header() {
       >
         <div className="flex h-full items-center justify-between border-b border-[#fafaf6] bg-[#1d1d1f]/70 px-6 text-white backdrop-blur-xl lg:px-40">
           <h1 className="text-xs sm:text-base">
-            <Link to="/">Burhanu Sultan Ramadan.</Link>
+            <a href="#home">Burhanu Sultan Ramadan.</a>
           </h1>
 
           <div className="hidden lg:block">
             <nav>
               <ul className="flex gap-10">
                 <li>
-                  <Link to="/">Home</Link>
+                  <a href="#home">Home</a>
                 </li>
                 <li>
-                  <Link to="/projects">Portfolio</Link>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <a href="#projects">Portfolio</a>
                 </li>
               </ul>
             </nav>
@@ -96,19 +95,19 @@ export default function Header() {
             <nav className="text-2xl font-bold text-white">
               <ul className="flex flex-col items-center gap-20">
                 <motion.li variants={itemVariants}>
-                  <Link to="/" onClick={() => setOpen(false)}>
+                  <a href="#home" onClick={() => setOpen(false)}>
                     Home
-                  </Link>
+                  </a>
                 </motion.li>
                 <motion.li variants={itemVariants}>
-                  <Link to="/projects" onClick={() => setOpen(false)}>
-                    Portfolio
-                  </Link>
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Link to="/about" onClick={() => setOpen(false)}>
+                  <a href="#about" onClick={() => setOpen(false)}>
                     About
-                  </Link>
+                  </a>
+                </motion.li>
+                <motion.li variants={itemVariants}>
+                  <a href="#projects" onClick={() => setOpen(false)}>
+                    Portfolio
+                  </a>
                 </motion.li>
               </ul>
             </nav>
