@@ -22,3 +22,7 @@
   /* font-family: "Passion One", serif; */
   background-color: #1d1d1f;
 }
+
+html {
+  scroll-behavior: smooth;
+}
