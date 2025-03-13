@@ -5,6 +5,13 @@ import TextReveal from "../components/TextReveal";
 
 const projectList = [
   {
+    title: "Chat App",
+    desc: "A real-time chat application built using the MERN stack.",
+    img: image.chat,
+    demoURL: "https://chat-app-mern-henna.vercel.app/",
+    github: "https://github.com/burhanusr/chat-app-mern",
+  },
+  {
     title: "POS System",
     desc: "Simple Web-Based POS System for Easy Sales and Inventory Management.",
     img: image.pos,
